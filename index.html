@@ -17,7 +17,7 @@
     href="/nuxttest/_nuxt/icons/icon_512x512.67fed4.png" sizes="512x512">
   <link data-n-head="1" rel="manifest" href="/nuxttest/_nuxt/manifest.c46f56f6.json" data-hid="manifest">
   <base href="/nuxttest/">
-  <link rel="preload" href="/nuxttest/_nuxt/634dfe8.js" as="script">
+  <link rel="preload" href="/nuxttest/_nuxt/3b21a80.js" as="script">
   <link rel="preload" href="/nuxttest/_nuxt/c132cec.js" as="script">
   <link rel="preload" href="/nuxttest/_nuxt/css/5afaa32.css" as="style">
   <link rel="preload" href="/nuxttest/_nuxt/113e49e.js" as="script">
@@ -45,11 +45,15 @@
     window.isCro = true;
     const portalValue = findGetParameter('pid');
     const refererValue = findGetParameter('referer');
+    const language = findGetParameter('lang');
     if (portalValue) {
       window.croPid = portalValue;
     }
     if (refererValue) {
       window.croReferer = refererValue;
+    }
+    if (language) {
+      window.croLanguage = language;
     }
   </script>
   <div id="__nuxt">
@@ -162,7 +166,7 @@
     </div>
   </div>
   <script>window.__NUXT__ = { config: { _app: { basePath: "/nuxttest/", assetsPath: "/nuxttest/_nuxt/", cdnURL: null } } }</script>
-  <script src="/nuxttest/_nuxt/634dfe8.js"></script>
+  <script src="/nuxttest/_nuxt/3b21a80.js"></script>
   <script src="/nuxttest/_nuxt/c132cec.js"></script>
   <script src="/nuxttest/_nuxt/113e49e.js"></script>
   <script src="/nuxttest/_nuxt/4bd52be.js"></script>
